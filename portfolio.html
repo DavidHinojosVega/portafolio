@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portafolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Proyectos | David Vega</title>
+  <meta name="description" content="Proyectos de desarrollo web, IoT con Arduino, gestión de eventos y trabajos eléctricos realizados por Angel David Hinojos Vega.">
+  <meta name="keywords" content="proyectos, desarrollo web, Arduino, IoT, Laravel, JavaScript, torneos Smash Bros">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://davidhinojosvega.github.io/portafolio/portfolio.html">
+  <meta property="og:title" content="Proyectos | David Vega">
+  <meta property="og:description" content="Proyectos de desarrollo web, IoT con Arduino, gestión de eventos y trabajos eléctricos realizados por Angel David Hinojos Vega.">
+  <meta property="og:image" content="https://davidhinojosvega.github.io/portafolio/assets/img/profile/profile-square-11.webp">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
+  <link href="assets/img/apple-touch-icon.svg" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -27,13 +34,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body class="portfolio-page">
@@ -50,19 +51,19 @@
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="about.html">Sobre mi</a></li>
+          <li><a href="portfolio.html" class="active">Proyectos</a></li>
           <li><a href="resume.html">Curriculum</a></li>
           <li><a href="services.html">Formacion Tecnica y Certificaciones</a></li>
-          <li><a href="portfolio.html" class="active">Proyectos</a></li>
           <li><a href="contact.html">Contacto</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-    <div class="header-social-links">
-        <a target="_blank" href="https://wa.me/526143937106" class="twitter"><i class="bi bi-whatsapp"></i></a>
-        <a target="_blank" href="https://www.facebook.com/david.vega.402052/" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a target="_blank" href="https://www.instagram.com/davidhv_01?igsh=NWJra2tpZmE1Mmhm&utm_source=qr" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/david-vega-085603381/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <div class="header-social-links">
+        <a target="_blank" href="https://wa.me/526143937106"><i class="bi bi-whatsapp"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/david-vega-085603381/"><i class="bi bi-linkedin"></i></a>
+        <a target="_blank" href="https://www.credly.com/users/angel-david-hinojos-vega"><i class="bi bi-patch-check"></i></a>
+        <a target="_blank" href="https://github.com/DavidHinojosVega"><i class="bi bi-github"></i></a>
       </div>
 
     </div>
@@ -81,7 +82,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-web">Desarrollo Web</li>
@@ -141,81 +142,56 @@
 <!------------------------------------- fin Bracket Master ---------------------------------------------->
 
 <!-- MODAL ESTILO FOLIOONE -->
-<!-- MODAL ESTILO FOLIOONE PARA BRACKET MASTER (SIN CARRUSEL) -->
+<!-- MODAL BRACKET MASTER -->
 <div class="modal fade" id="modalBracketMaster" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content border-0 rounded-4" style="background-color: var(--surface-color); color: var(--default-color);">
+    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
+      <div class="row g-0">
 
-      <!-- HEADER -->
-      <div class="modal-header border-0" style="background-color: var(--surface-color);">
-        <h3 class="fw-bold" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">
-          Bracket Master
-        </h3>
+        <!-- IZQUIERDA: Video -->
+        <div class="col-lg-6 modal-split-media">
+          <button type="button" class="btn-close shadow-none modal-split-close" data-bs-dismiss="modal"></button>
+          <video class="w-100 h-100" controls>
+            <source src="assets/img/portfolio/desarrolloweb/bracket_master.mp4" type="video/mp4">
+          </video>
+        </div>
 
-        <button type="button" class="btn-close shadow-none"
-                data-bs-dismiss="modal"
-                style="filter: invert(1);"></button>
-      </div>
+        <!-- DERECHA: Info -->
+        <div class="col-lg-6 modal-split-info">
+          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">Bracket Master</h3>
+          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Desarrollo Web</p>
 
-      <!-- BODY -->
-      <div class="modal-body">
+          <p style="opacity:.85;">
+            Plataforma web creada para la comunidad de Neo Smash. Incluye generación de brackets,
+            información de eventos y recursos para la gestión de torneos. El objetivo es convertirla
+            en una suite completa con registro de jugadores, llaves automáticas y estadísticas.
+          </p>
 
-        <!-- VIDEO ÚNICO -->
-        <div class="rounded-4 overflow-hidden shadow-lg mb-4">
-          <div class="ratio ratio-16x9">
-            <video class="w-100 h-100" controls style="object-fit: cover;">
-              <source src="assets/img/portfolio/desarrolloweb/bracket_master.mp4" type="video/mp4">
-            </video>
+          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Tecnologías</h6>
+          <ul style="opacity:.85;">
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>HTML + Bootstrap</li>
+            <li>Responsive Design</li>
+          </ul>
+
+          <div class="modal-actions">
+            <a href="https://github.com/DavidHinojosVega" target="_blank"
+               class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
+               style="background-color: var(--accent-color); border-color: var(--accent-color); color: var(--contrast-color);">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
+                    style="border-color: var(--accent-color); color: var(--accent-color);">
+              Cerrar
+            </button>
           </div>
         </div>
 
-        <!-- DESCRIPCIÓN -->
-        <!-- DESCRIPCIÓN -->
-<h4 class="fw-bold mb-3" style="color: var(--heading-color);">Descripción del proyecto</h4>
-
-<p style="opacity: .85;">
-  Bracket Master es una plataforma web informativa creada para la comunidad de Neo Smash.
-  Incluye herramientas útiles para jugadores y organizadores, como generación de brackets,
-  información de eventos y recursos para la gestión de torneos.  
-  El objetivo es convertirla en una suite completa donde se puedan administrar torneos
-  de manera profesional, incluyendo registro de jugadores, llaves automáticas y estadísticas.
-</p>
-
-<h5 class="fw-bold mt-4" style="color: var(--heading-color);">Tecnologías utilizadas</h5>
-<ul style="opacity: .85;">
-  <li>PHP</li>
-  <li>JavaScript</li>
-  <li>HTML + Bootstrap</li>
-  <li>Responsive Design</li>
-</ul>
-
-
       </div>
-
-      <!-- FOOTER -->
-      <div class="modal-footer border-0 d-flex justify-content-between">
-
-        <!-- Botón de GitHub -->
-        <a href="https://github.com/DavidHinojosVega"
-           target="_blank"
-           class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
-           style="background-color: var(--accent-color); border-color: var(--accent-color);">
-          <i class="bi bi-github fs-5"></i> GitHub
-        </a>
-
-        <!-- Botón cerrar -->
-        <button class="btn btn-outline rounded-pill px-4"
-                data-bs-dismiss="modal"
-                style="border-color: var(--accent-color); color: var(--accent-color);">
-          Cerrar
-        </button>
-
-      </div>
-
     </div>
   </div>
 </div>
-<!-- MODAL ESTILO FOLIOONE -->
 
   
 
@@ -262,84 +238,57 @@
 <!-- FIN Tarjeta de Portafolio - ContaSmart -->
 
 
-<!-- ======================= MODAL CONTASMART (ESTILO FOLIOONE) ======================= -->
+<!-- MODAL CONTASMART -->
 <div class="modal fade" id="modalContaSmart" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content border-0 rounded-4" style="background-color: var(--surface-color); color: var(--default-color);">
+    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
+      <div class="row g-0">
 
-      <!-- HEADER -->
-      <div class="modal-header border-0" style="background-color: var(--surface-color);">
-        <h3 class="fw-bold" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">
-          ContaSmart
-        </h3>
+        <!-- IZQUIERDA: Video -->
+        <div class="col-lg-6 modal-split-media">
+          <button type="button" class="btn-close shadow-none modal-split-close" data-bs-dismiss="modal"></button>
+          <video class="w-100 h-100" controls>
+            <source src="assets/img/portfolio/desarrolloweb/contasmart.mp4" type="video/mp4">
+          </video>
+        </div>
 
-        <button type="button" class="btn-close shadow-none"
-                data-bs-dismiss="modal"
-                style="filter: invert(1);"></button>
-      </div>
+        <!-- DERECHA: Info -->
+        <div class="col-lg-6 modal-split-info">
+          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">ContaSmart</h3>
+          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Desarrollo Web · Laravel</p>
 
-      <!-- BODY -->
-      <div class="modal-body">
+          <p style="opacity:.85;">
+            Plataforma educativa para facilitar el aprendizaje del cálculo de nóminas,
+            contabilidad básica y procesos administrativos mediante ejercicios interactivos.
+            Permite trabajar con ejemplos reales, simular nóminas paso a paso y reforzar conceptos clave.
+          </p>
 
-        <!-- VIDEO ÚNICO -->
-        <div class="rounded-4 overflow-hidden shadow-lg mb-4">
-          <div class="ratio ratio-16x9">
-            <video class="w-100 h-100" controls style="object-fit: cover;">
-              <source src="assets/img/portfolio/desarrolloweb/contasmart.mp4" type="video/mp4">
-            </video>
+          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Tecnologías</h6>
+          <ul style="opacity:.85;">
+            <li>Laravel 10 (MVC)</li>
+            <li>SQLite</li>
+            <li>Blade Templates</li>
+            <li>Bootstrap 5</li>
+            <li>HTML, CSS, JavaScript</li>
+          </ul>
+
+          <div class="modal-actions">
+            <a href="https://github.com/DavidHinojosVega" target="_blank"
+               class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
+               style="background-color: var(--accent-color); border-color: var(--accent-color); color: var(--contrast-color);">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
+                    style="border-color: var(--accent-color); color: var(--accent-color);">
+              Cerrar
+            </button>
           </div>
         </div>
 
-        <!-- DESCRIPCIÓN -->
-        <h4 class="fw-bold mb-3" style="color: var(--heading-color);">Descripción del proyecto</h4>
-
-        <p style="opacity:.85;">
-          ContaSmart es una plataforma educativa diseñada para facilitar el aprendizaje del cálculo de nóminas,
-          contabilidad básica y procesos administrativos mediante ejercicios interactivos.
-          Su objetivo es ofrecer una herramienta clara, accesible y práctica para estudiantes que inician en el
-          mundo contable.
-        </p>
-
-        <p style="opacity:.85;">
-          La plataforma permite trabajar con ejemplos reales, simular nóminas paso a paso y reforzar conceptos clave,
-          todo dentro de un entorno intuitivo y responsivo desarrollado especialmente para uso académico.
-        </p>
-
-        <h5 class="fw-bold mt-4" style="color: var(--heading-color);">Tecnologías utilizadas</h5>
-        <ul style="opacity:.85;">
-          <li>Laravel 10 (Arquitectura MVC)</li>
-          <li>SQLite (Base de datos educativa)</li>
-          <li>Blade Templates</li>
-          <li>Bootstrap 5</li>
-          <li>HTML, CSS y JavaScript</li>
-        </ul>
-
       </div>
-
-      <!-- FOOTER -->
-      <div class="modal-footer border-0 d-flex justify-content-between">
-
-        <!-- Botón de GitHub -->
-        <a href="https://github.com/DavidHinojosVega"
-           target="_blank"
-           class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
-           style="background-color: var(--accent-color); border-color: var(--accent-color);">
-          <i class="bi bi-github fs-5"></i> GitHub
-        </a>
-
-        <!-- Botón cerrar -->
-        <button class="btn btn-outline rounded-pill px-4"
-                data-bs-dismiss="modal"
-                style="border-color: var(--accent-color); color: var(--accent-color);">
-          Cerrar
-        </button>
-
-      </div>
-
     </div>
   </div>
 </div>
-<!-- ======================= FIN MODAL CONTASMART ======================== -->
 <!-- ************************************************************ -->
 <!-- *********************  CONTASMART (FIN)  ******************* -->
 <!-- ************************************************************ -->
@@ -382,123 +331,81 @@
 </div>
 <!-- ======================= FIN TARJETA EVENTO ======================= -->
 
-<!-- ======================= MODAL NEO SMASH X ======================= -->
+<!-- MODAL NEO SMASH X -->
 <div class="modal fade" id="modalNeoX" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content border-0 rounded-4"
-         style="background-color: var(--surface-color); color: var(--default-color);">
+    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
+      <div class="row g-0">
 
-      <!-- HEADER -->
-      <div class="modal-header border-0" style="background-color: var(--surface-color);">
-        <h3 class="fw-bold" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">
-          Neo Smash X — Evento Competitivo
-        </h3>
-        <button type="button" class="btn-close shadow-none"
-                data-bs-dismiss="modal"
-                style="filter: invert(1);"></button>
-      </div>
-
-      <!-- BODY -->
-      <div class="modal-body">
-
-        <!-- Carrusel -->
-        <div class="rounded-4 overflow-hidden shadow-lg mb-4">
-          <div id="carouselNeoX" class="carousel slide carousel-fade">
-
-            <div class="carousel-inner">
-
-              <div class="carousel-item active">
-                <img src="assets/img/portfolio/neosmashX/493085022_627789930312595_4053688517343528522_n.jpg"
-                     class="d-block w-100" style="object-fit: cover;">
+        <!-- IZQUIERDA: Carrusel -->
+        <div class="col-lg-6 modal-split-media">
+          <button type="button" class="btn-close shadow-none modal-split-close" data-bs-dismiss="modal"></button>
+          <div id="carouselNeoX" class="carousel slide carousel-fade h-100">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img src="assets/img/portfolio/neosmashX/493085022_627789930312595_4053688517343528522_n.jpg">
               </div>
-
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/neosmashX/493803042_627789183646003_759982310692669996_n.jpg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/neosmashX/493803042_627789183646003_759982310692669996_n.jpg">
               </div>
-
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/neosmashX/496333800_627789613645960_7473651325641202392_n.jpg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/neosmashX/496333800_627789613645960_7473651325641202392_n.jpg">
               </div>
-
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/neosmashX/496933973_627789986979256_7633983207491082880_n.jpg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/neosmashX/496933973_627789986979256_7633983207491082880_n.jpg">
               </div>
-
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/neosmashX/502955146_627789773645944_7472072083775593909_n.jpg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/neosmashX/502955146_627789773645944_7472072083775593909_n.jpg">
               </div>
-
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/neosmashX/504031431_627171243707797_608117142707249454_n.jpg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/neosmashX/504031431_627171243707797_608117142707249454_n.jpg">
               </div>
-
             </div>
-
-            <!-- Controles -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselNeoX" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
-
             <button class="carousel-control-next" type="button" data-bs-target="#carouselNeoX" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
             </button>
-
           </div>
         </div>
 
-        <!-- DESCRIPCIÓN -->
-        <h4 class="fw-bold mb-3" style="color: var(--heading-color);">Descripción del evento</h4>
+        <!-- DERECHA: Info -->
+        <div class="col-lg-6 modal-split-info">
+          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">Neo Smash X</h3>
+          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Evento Competitivo · Smash Bros</p>
 
-        <p style="opacity:.85;">
-          Neo Smash X fue un torneo especial que reunió a jugadores de múltiples regiones,
-          ofreciendo una experiencia competitiva completa: administración del evento,
-          control de brackets, logística, staff dedicado y un ambiente de alto nivel.
-        </p>
+          <p style="opacity:.85;">
+            Torneo especial que reunió a jugadores de múltiples regiones, ofreciendo una experiencia
+            competitiva completa: administración del evento, control de brackets, logística,
+            staff dedicado y un ambiente de alto nivel para la comunidad de NCG.
+          </p>
 
-        <p style="opacity:.85;">
-          El evento incluyó setups optimizados, manejo de tiempos, espacio asignado para jugadores
-          y una organización diseñada para crear una experiencia inolvidable para la comunidad de NCG.
-        </p>
+          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Detalles</h6>
+          <ul style="opacity:.85;">
+            <li>Evento competitivo multi-regional</li>
+            <li>Logística y administración profesional</li>
+            <li>Control de brackets y tiempos</li>
+            <li>Jugadores destacados de la región</li>
+          </ul>
 
-        <h5 class="fw-bold mt-4" style="color: var(--heading-color);">Detalles</h5>
-        <ul style="opacity:.85;">
-          <li>Evento competitivo regional</li>
-          <li>Logística y administración profesional</li>
-          <li>Control de brackets y tiempos de juego</li>
-          <li>Participación de jugadores destacados</li>
-        </ul>
-
-      </div>
-
-      <!-- FOOTER -->
-      <div class="modal-footer border-0 d-flex justify-content-between">
-
-        <!-- BOTÓN FACEBOOK -->
-        <a href="https://www.facebook.com/profile.php?id=100092447806558"
-           target="_blank"
-           class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
-           style="background-color: var(--accent-color); border-color: var(--accent-color);">
-          <i class="bi bi-facebook fs-5"></i> Ver en Facebook
-        </a>
-
-        <!-- Botón cerrar -->
-        <button class="btn btn-outline rounded-pill px-4"
-                data-bs-dismiss="modal"
-                style="border-color: var(--accent-color); color: var(--accent-color);">
-          Cerrar
-        </button>
+          <div class="modal-actions">
+            <a href="https://www.facebook.com/profile.php?id=100092447806558" target="_blank"
+               class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
+               style="background-color: var(--accent-color); border-color: var(--accent-color); color: var(--contrast-color);">
+              <i class="bi bi-facebook"></i> Ver en Facebook
+            </a>
+            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
+                    style="border-color: var(--accent-color); color: var(--accent-color);">
+              Cerrar
+            </button>
+          </div>
+        </div>
 
       </div>
-
     </div>
   </div>
 </div>
-<!-- ======================= FIN MODAL NEO SMASH X ======================= -->
  <!-- ************************************************************ -->
 <!-- *********************  NEO SMASH X EVENTO (FIN)  ******************* -->
 <!-- ************************************************************ -->
@@ -544,117 +451,78 @@
 
 <!-- *******************************   INICIO MODAL NEO SMASH V7   ******************************* -->
 
+<!-- MODAL NEO SMASH V7 -->
 <div class="modal fade" id="modalNeoV7" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content border-0 rounded-4"
-         style="background-color: var(--surface-color); color: var(--default-color);">
+    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
+      <div class="row g-0">
 
-      <!-- ============================ HEADER ============================ -->
-      <div class="modal-header border-0">
-        <h3 class="fw-bold" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">
-          Neo Smash V7 — Evento Regional
-        </h3>
-
-        <button type="button" class="btn-close shadow-none"
-                data-bs-dismiss="modal"
-                style="filter: invert(1);"></button>
-      </div>
-
-      <!-- ============================ BODY ============================ -->
-      <div class="modal-body">
-
-        <!-- =============== CARRUSEL COMPLETO DENTRO DEL MODAL =============== -->
-        <div class="rounded-4 overflow-hidden shadow-lg mb-4">
-          <div id="carouselNeoV7Full" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
-
-              <div class="carousel-item active">
-                <img src="assets/img/portfolio/neosmashV7/476798707_542282102196712_4062316157234375951_n.jpg"
-                     class="d-block w-100" style="object-fit: cover;">
+        <!-- IZQUIERDA: Carrusel -->
+        <div class="col-lg-6 modal-split-media">
+          <button type="button" class="btn-close shadow-none modal-split-close" data-bs-dismiss="modal"></button>
+          <div id="carouselNeoV7Full" class="carousel slide carousel-fade h-100">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img src="assets/img/portfolio/neosmashV7/476798707_542282102196712_4062316157234375951_n.jpg">
               </div>
-
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/neosmashV7/476800794_542282022196720_3082869242479192797_n.jpg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/neosmashV7/476800794_542282022196720_3082869242479192797_n.jpg">
               </div>
-
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/neosmashV7/477717563_542282028863386_1160761766155885727_n.jpg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/neosmashV7/477717563_542282028863386_1160761766155885727_n.jpg">
               </div>
-
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/neosmashV7/477727102_542282052196717_4643335821281647707_n.jpg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/neosmashV7/477727102_542282052196717_4643335821281647707_n.jpg">
               </div>
-
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/neosmashV7/479674364_542281885530067_7629345711541944160_n.jpg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/neosmashV7/479674364_542281885530067_7629345711541944160_n.jpg">
               </div>
-
             </div>
-
-            <!-- Controles -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselNeoV7Full" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
-
             <button class="carousel-control-next" type="button" data-bs-target="#carouselNeoV7Full" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
             </button>
-
           </div>
         </div>
 
-        <!-- =============== TEXTO – DESCRIPCIÓN DEL EVENTO =============== -->
-        <h4 class="fw-bold mb-3" style="color: var(--heading-color);">Descripción del evento</h4>
+        <!-- DERECHA: Info -->
+        <div class="col-lg-6 modal-split-info">
+          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">Neo Smash V7</h3>
+          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Evento Regional · Smash Bros</p>
 
-        <p style="opacity:.85;">
-          Neo Smash V7 fue un torneo regional que reunió a jugadores de distintos municipios,
-          ofreciendo un ambiente competitivo, profesional y organizado. El evento integró mesas dedicadas,
-          setups optimizados y un flujo de partidas diseñado para mantener tiempos eficientes.
-        </p>
+          <p style="opacity:.85;">
+            Torneo regional que reunió a jugadores de distintos municipios en un ambiente competitivo
+            y profesional. Integró mesas dedicadas, setups optimizados y un flujo de partidas
+            diseñado para mantener tiempos eficientes.
+          </p>
 
-        <p style="opacity:.85;">
-          La logística incluyó control de brackets, asignación de partidas, staff dedicado
-          y atención a los participantes para brindar una experiencia completa a la comunidad de NCG.
-        </p>
+          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Detalles</h6>
+          <ul style="opacity:.85;">
+            <li>Evento competitivo regional</li>
+            <li>Organización y administración profesional</li>
+            <li>Setups y espacios asignados</li>
+            <li>Experiencia fluida para competidores</li>
+          </ul>
 
-        <h5 class="fw-bold mt-4" style="color: var(--heading-color);">Detalles del evento</h5>
-        <ul style="opacity:.85;">
-          <li>Evento competitivo regional con jugadores destacados</li>
-          <li>Organización y administración profesional</li>
-          <li>Setups y espacios asignados para partidas</li>
-          <li>Experiencia fluida para competidores y asistentes</li>
-        </ul>
-
-      </div>
-
-      <!-- ============================ FOOTER ============================ -->
-      <div class="modal-footer border-0 d-flex justify-content-between">
-
-        <!-- Botón Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=100092447806558"
-           target="_blank"
-           class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
-           style="background-color: var(--accent-color); border-color: var(--accent-color);">
-          <i class="bi bi-facebook fs-5"></i> Ver en Facebook
-        </a>
-
-        <!-- Botón cerrar -->
-        <button class="btn btn-outline rounded-pill px-4"
-                data-bs-dismiss="modal"
-                style="border-color: var(--accent-color); color: var(--accent-color);">
-          Cerrar
-        </button>
+          <div class="modal-actions">
+            <a href="https://www.facebook.com/profile.php?id=100092447806558" target="_blank"
+               class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
+               style="background-color: var(--accent-color); border-color: var(--accent-color); color: var(--contrast-color);">
+              <i class="bi bi-facebook"></i> Ver en Facebook
+            </a>
+            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
+                    style="border-color: var(--accent-color); color: var(--accent-color);">
+              Cerrar
+            </button>
+          </div>
+        </div>
 
       </div>
-
     </div>
   </div>
 </div>
-<!-- *******************************   FIN MODAL NEO SMASH V7   ******************************* -->
 <!-- **************************************************************************************** -->
 <!-- *******************************   FIN TARJETA NEO SMASH V7   **************************** -->
 <!-- **************************************************************************************** -->
@@ -675,7 +543,7 @@
     <div class="portfolio-img">
       <div class="ratio ratio-4x3">
         <img
-          src="assets/img/portfolio/trabajoselectricos/WhatsApp Image 2025-12-02 at 4.38.32 PM.jpeg"
+          src="assets/img/portfolio/trabajoselectricos/Tb7.jpeg"
           class="img-fluid object-fit-cover"
           alt="">
       </div>
@@ -701,123 +569,91 @@
   </div>
 </div>
 <!-- ======================= FIN TARJETA ELECTRICIDAD ======================= -->
-<!-- ======================= MODAL ELECTRICIDAD ======================= -->
+<!-- MODAL ELECTRICIDAD -->
 <div class="modal fade" id="modalElectricidad" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content border-0 rounded-4"
-         style="background-color: var(--surface-color); color: var(--default-color);">
+    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
+      <div class="row g-0">
 
-      <!-- HEADER -->
-      <div class="modal-header border-0" style="background-color: var(--surface-color);">
-        <h3 class="fw-bold" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">
-          Trabajos de Electricidad — Instalaciones y Mantenimiento
-        </h3>
-        <button type="button" class="btn-close shadow-none"
-                data-bs-dismiss="modal"
-                style="filter: invert(1);"></button>
-      </div>
-
-      <!-- BODY -->
-      <div class="modal-body">
-
-        <!-- Carrusel -->
-        <div class="rounded-4 overflow-hidden shadow-lg mb-4">
-          <div id="carouselElectricidad" class="carousel slide carousel-fade">
-
-            <div class="carousel-inner">
-
-              <!-- ===== IMAGEN 1 ===== -->
-              <div class="carousel-item active">
-                <img src="assets/img/portfolio/trabajoselectricos/WhatsApp Image 2025-12-02 at 4.38.32 PM.jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+        <!-- IZQUIERDA: Carrusel -->
+        <div class="col-lg-6 modal-split-media">
+          <button type="button" class="btn-close shadow-none modal-split-close" data-bs-dismiss="modal"></button>
+          <div id="carouselElectricidad" class="carousel slide carousel-fade h-100">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img src="assets/img/portfolio/trabajoselectricos/Tb1.jpeg">
               </div>
-
-              <!-- ===== IMAGEN 2 ===== -->
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/trabajoselectricos/WhatsApp Image 2025-12-02 at 4.38.33 PM (1).jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/trabajoselectricos/Tb2.jpeg">
               </div>
-
-              <!-- ===== IMAGEN 3 ===== -->
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/trabajoselectricos/WhatsApp Image 2025-12-02 at 4.38.33 PM.jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/trabajoselectricos/Tb3.jpeg">
               </div>
-
-              <!-- ===== IMAGEN 4 ===== -->
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/trabajoselectricos/WhatsApp Image 2025-12-02 at 4.38.34 PM.jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/trabajoselectricos/Tb4.jpeg">
               </div>
-
-              <!-- ===== IMAGEN 5 ===== -->
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/trabajoselectricos/WhatsApp Image 2025-12-02 at 4.38.35 PM.jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/trabajoselectricos/Tb5.jpeg">
               </div>
-
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/trabajoselectricos/Tb6.jpeg">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/trabajoselectricos/Tb7.jpeg">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/trabajoselectricos/Tb8.jpeg">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/trabajoselectricos/Tb9.jpeg">
+              </div>
             </div>
-
-            <!-- Controles -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselElectricidad" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
-
             <button class="carousel-control-next" type="button" data-bs-target="#carouselElectricidad" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
             </button>
-
           </div>
         </div>
 
-        <!-- DESCRIPCIÓN -->
-        <h4 class="fw-bold mb-3" style="color: var(--heading-color);">Descripción del servicio</h4>
+        <!-- DERECHA: Info -->
+        <div class="col-lg-6 modal-split-info">
+          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">Instalaciones Eléctricas</h3>
+          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Electricidad · Residencial</p>
 
-        <p style="opacity:.85;">
-          Servicios profesionales de instalaciones eléctricas residenciales y comerciales,
-          realizados con estándares técnicos para garantizar seguridad, eficiencia y durabilidad.
-        </p>
+          <p style="opacity:.85;">
+            Servicios profesionales de instalaciones eléctricas residenciales y comerciales
+            con estándares técnicos para garantizar seguridad, eficiencia y durabilidad.
+            Desde cableado estructurado hasta mantenimiento preventivo y correctivo.
+          </p>
 
-        <p style="opacity:.85;">
-          Incluyen desde cableado estructurado, centros de carga, canalización, instalación de contactos
-          e iluminación, hasta mantenimiento preventivo y correctivo.
-        </p>
+          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Especialidades</h6>
+          <ul style="opacity:.85;">
+            <li>Instalaciones eléctricas residenciales</li>
+            <li>Centros de carga y protecciones</li>
+            <li>Canalización y cableado profesional</li>
+            <li>Mantenimiento preventivo y diagnóstico</li>
+            <li>Iluminación y tomacorrientes</li>
+          </ul>
 
-        <h5 class="fw-bold mt-4" style="color: var(--heading-color);">Especialidades</h5>
-        <ul style="opacity:.85;">
-          <li>Instalaciones eléctricas residenciales</li>
-          <li>Centros de carga y protecciones</li>
-          <li>Canalización y cableado profesional</li>
-          <li>Mantenimiento preventivo y diagnóstico</li>
-          <li>Instalación de iluminación y tomacorrientes</li>
-        </ul>
-
-      </div>
-
-      <!-- FOOTER -->
-      <div class="modal-footer border-0 d-flex justify-content-between">
-
-        <!-- Botón que redirige a tu Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=61581119864272"
-           target="_blank"
-           class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
-           style="background-color: var(--accent-color); border-color: var(--accent-color);">
-          <i class="bi bi-facebook fs-5"></i> Ver trabajos
-        </a>
-
-        <!-- Botón Cerrar -->
-        <button class="btn btn-outline rounded-pill px-4"
-                data-bs-dismiss="modal"
-                style="border-color: var(--accent-color); color: var(--accent-color);">
-          Cerrar
-        </button>
+          <div class="modal-actions">
+            <a href="https://www.facebook.com/profile.php?id=61581119864272" target="_blank"
+               class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
+               style="background-color: var(--accent-color); border-color: var(--accent-color); color: var(--contrast-color);">
+              <i class="bi bi-facebook"></i> Ver trabajos
+            </a>
+            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
+                    style="border-color: var(--accent-color); color: var(--accent-color);">
+              Cerrar
+            </button>
+          </div>
+        </div>
 
       </div>
-
     </div>
   </div>
 </div>
-<!-- ======================= FIN MODAL ELECTRICIDAD ======================= -->
 
 <!-- ************************************************************ -->
 <!-- *********************  ELECTRICIDAD (FIN)  ********************* -->
@@ -867,134 +703,83 @@
 </div>
 <!-- ======================= FIN TARJETA ======================= -->
 
+<!-- MODAL BIBLIOTECA INTELIGENTE -->
 <div class="modal fade" id="modalBibliotecaInteligente" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content border-0 rounded-4"
-         style="background-color: var(--surface-color); color: var(--default-color);">
+    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
+      <div class="row g-0">
 
-      <!-- ======================= HEADER ======================= -->
-      <div class="modal-header border-0" style="background-color: var(--surface-color);">
-        <h3 class="fw-bold" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">
-          Biblioteca Inteligente — Proyecto Arduino
-        </h3>
-
-        <button type="button" class="btn-close shadow-none"
-                data-bs-dismiss="modal"
-                style="filter: invert(1);"></button>
-      </div>
-
-      <!-- ======================= BODY ======================= -->
-      <div class="modal-body">
-
-        <!-- =================== CARRUSEL =================== -->
-        <div class="rounded-4 overflow-hidden shadow-lg mb-4">
-          <div id="carouselBiblioteca" class="carousel slide carousel-fade">
-
-            <div class="carousel-inner">
-
-              <!-- Imagen 1 -->
-              <div class="carousel-item active">
-                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.22 PM (1).jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+        <!-- IZQUIERDA: Carrusel -->
+        <div class="col-lg-6 modal-split-media">
+          <button type="button" class="btn-close shadow-none modal-split-close" data-bs-dismiss="modal"></button>
+          <div id="carouselBiblioteca" class="carousel slide carousel-fade h-100">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.22 PM (1).jpeg">
               </div>
-
-              <!-- Imagen 2 -->
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.21 PM (1).jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.21 PM (1).jpeg">
               </div>
-
-              <!-- Imagen 3 -->
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.21 PM (2).jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.21 PM (2).jpeg">
               </div>
-
-              <!-- Imagen 4 -->
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.21 PM (3).jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.21 PM (3).jpeg">
               </div>
-
-              <!-- Imagen 5 -->
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.21 PM.jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.21 PM.jpeg">
               </div>
-
-              <!-- Imagen 6 -->
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.22 PM (2).jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.22 PM (2).jpeg">
               </div>
-
-              <!-- Imagen 7 -->
-              <div class="carousel-item">
-                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.22 PM (3).jpeg"
-                     class="d-block w-100" style="object-fit: cover;">
+              <div class="carousel-item h-100">
+                <img src="assets/img/portfolio/arduino/WhatsApp Image 2025-12-02 at 11.09.22 PM (3).jpeg">
               </div>
-
             </div>
-
-            <!-- Controles -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselBiblioteca" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
-
             <button class="carousel-control-next" type="button" data-bs-target="#carouselBiblioteca" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
             </button>
-
           </div>
         </div>
 
-        <!-- =================== DESCRIPCIÓN =================== -->
-        <h4 class="fw-bold mb-3" style="color: var(--heading-color);">Descripción del proyecto</h4>
+        <!-- DERECHA: Info -->
+        <div class="col-lg-6 modal-split-info">
+          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">Biblioteca Inteligente</h3>
+          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Arduino · IoT</p>
 
-        <p style="opacity:.85;">
-          La Biblioteca Inteligente es un sistema automatizado desarrollado con Arduino que activa la
-          iluminación de forma automática al detectar baja luz ambiental. Además, registra el tiempo total
-          que las luces permanecen encendidas, permitiendo evaluar consumo energético y hábitos de uso.
-        </p>
+          <p style="opacity:.85;">
+            Sistema automatizado con Arduino que activa la iluminación al detectar baja luz ambiental
+            y registra el tiempo de operación. Combina sensores, electrónica y programación para
+            una solución aplicable en aulas y bibliotecas.
+          </p>
 
-        <p style="opacity:.85;">
-          Este proyecto combina sensores, electrónica básica y programación para ofrecer una solución real
-          aplicable a aulas, bibliotecas, espacios de estudio y entornos donde se necesita iluminación
-          eficiente y automatizada.
-        </p>
+          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Características</h6>
+          <ul style="opacity:.85;">
+            <li>Encendido automático con sensor LDR</li>
+            <li>Registro de tiempo en funcionamiento</li>
+            <li>Diseño modular y escalable</li>
+          </ul>
 
-        <h5 class="fw-bold mt-4" style="color: var(--heading-color);">Características principales</h5>
-        <ul style="opacity:.85;">
-          <li>Encendido automático mediante sensor LDR.</li>
-          <li>Registro de tiempo en funcionamiento utilizando temporizadores.</li>
-          <li>Control de iluminación eficiente y confiable.</li>
-          <li>Uso de Arduino para procesamiento y control.</li>
-          <li>Diseño modular, escalable y fácil de mantener.</li>
-        </ul>
+          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Tecnologías</h6>
+          <ul style="opacity:.85;">
+            <li>Arduino UNO</li>
+            <li>Sensor LDR</li>
+            <li>Relay para control de lámparas</li>
+            <li>C++ (Arduino IDE)</li>
+          </ul>
 
-        <h5 class="fw-bold mt-4" style="color: var(--heading-color);">Tecnologías utilizadas</h5>
-        <ul style="opacity:.85;">
-          <li>Arduino UNO</li>
-          <li>Sensor LDR para detección de luz</li>
-          <li>Relay para control de lámparas</li>
-          <li>Circuitería eléctrica básica</li>
-          <li>Programación en C++ (Arduino IDE)</li>
-        </ul>
-
-      </div>
-
-      <!-- ======================= FOOTER ======================= -->
-      <div class="modal-footer border-0 d-flex justify-content-end">
-
-        <!-- Botón cerrar -->
-        <button class="btn btn-outline rounded-pill px-4"
-                data-bs-dismiss="modal"
-                style="border-color: var(--accent-color); color: var(--accent-color);">
-          Cerrar
-        </button>
+          <div class="modal-actions">
+            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
+                    style="border-color: var(--accent-color); color: var(--accent-color);">
+              Cerrar
+            </button>
+          </div>
+        </div>
 
       </div>
-
     </div>
   </div>
 </div>
@@ -1014,9 +799,7 @@
 
         </div>
 
-        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
-          <a href="#portfolio" class="btn btn-primary">View All Case Studies</a>
-        </div>
+
 
       </div>
 
@@ -1026,23 +809,18 @@
 
   <footer id="footer" class="footer">
 
-    <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/DavidHinojosVega" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-github"></i>
-        </a>
-
-        <a href="https://www.facebook.com/david.vega.402052/" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-facebook"></i>
-        </a>
-
-        <a href="https://www.instagram.com/davidhv_01?igsh=NWJra2tpZmE1Mmhm&utm_source=qr" target="_blank"
-          rel="noopener noreferrer">
-          <i class="bi bi-instagram"></i>
-        </a>
-
-        <a target="_blank" href="https://www.linkedin.com/in/david-vega-085603381/"><i class="bi bi-linkedin"></i></a>
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© 2025 Angel David Hinojos Vega</p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/DavidHinojosVega" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/david-vega-085603381/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.credly.com/users/angel-david-hinojos-vega" target="_blank" rel="noopener noreferrer"><i class="bi bi-patch-check"></i></a>
+        <a href="https://wa.me/526143937106" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
       </div>
 
+    </div>
 
   </footer>
 
@@ -1054,7 +832,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>

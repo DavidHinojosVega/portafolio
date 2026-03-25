@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davidhinojosvega.github.io/portafolio/sitemap.xml
