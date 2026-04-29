@@ -85,6 +85,7 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
             <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-movil">Desarrollo Móvil</li>
             <li data-filter=".filter-web">Desarrollo Web</li>
             <li data-filter=".filter-arduino">Arduino</li>
             <li data-filter=".filter-eventos">Eventos</li>
@@ -96,6 +97,101 @@
             
 
             
+
+<!------------------------------------- LiftyHub ---------------------------------------------->
+
+<!-- LIFTYHUB - CARD -->
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-movil">
+  <div class="portfolio-card">
+
+    <div class="portfolio-img">
+      <div class="ratio ratio-4x3">
+        <video class="w-100 h-100"
+               muted
+               playsinline
+               onmouseenter="this.play()"
+               onmouseleave="this.pause(); this.currentTime = 0;"
+               style="object-fit: cover;">
+          <source src="assets/img/portfolio/desarrolloMovil/liftyhub.mov" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="portfolio-overlay">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalLiftyHub">
+          <i class="bi bi-play-btn"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="portfolio-info">
+      <h4>LiftyHub</h4>
+      <p>App de fitness multiplataforma (Android/iOS) con backend REST en Laravel 12, JWT y dashboard web en React + Vite.</p>
+      <div class="portfolio-tags">
+        <span>React Native</span>
+        <span>Laravel</span>
+        <span>MySQL</span>
+        <span>JWT</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- FIN Tarjeta LiftyHub -->
+
+<!-- MODAL LIFTYHUB -->
+<div class="modal fade" id="modalLiftyHub" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
+      <div class="row g-0">
+
+        <!-- IZQUIERDA: Video -->
+        <div class="col-lg-6 modal-split-media">
+          <button type="button" class="btn-close shadow-none modal-split-close" data-bs-dismiss="modal"></button>
+          <video class="w-100 h-100" controls>
+            <source src="assets/img/portfolio/desarrolloMovil/liftyhub.mov" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- DERECHA: Info -->
+        <div class="col-lg-6 modal-split-info">
+          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">LiftyHub</h3>
+          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Desarrollo Móvil · React Native</p>
+
+          <p style="opacity:.85;">
+            App de fitness multiplataforma para Android e iOS con backend REST construido en Laravel 12 y autenticación JWT.
+            Incluye módulos de rutinas, seguimiento de progreso, planes de dieta y perfil físico.
+            Dashboard web administrativo en React + Vite para gestión de usuarios y nutricionistas.
+          </p>
+
+          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Tecnologías</h6>
+          <ul style="opacity:.85;">
+            <li>React Native (Android / iOS)</li>
+            <li>Laravel 12 — API REST</li>
+            <li>JWT (autenticación)</li>
+            <li>MySQL</li>
+            <li>React + Vite (dashboard web)</li>
+          </ul>
+
+          <div class="modal-actions">
+            <a href="https://github.com/DavidHinojosVega" target="_blank"
+               class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
+               style="background-color: var(--accent-color); border-color: var(--accent-color); color: var(--contrast-color);">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
+                    style="border-color: var(--accent-color); color: var(--accent-color);">
+              Cerrar
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN Modal LiftyHub -->
+
+
 
 <!------------------------------------- Bracket Master ---------------------------------------------->
 
