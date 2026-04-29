@@ -125,7 +125,7 @@
 
     <div class="portfolio-info">
       <h4>LiftyHub</h4>
-      <p>App de fitness multiplataforma (Android/iOS) con backend REST en Laravel 12, JWT y dashboard web en React + Vite.</p>
+      <p>App de fitness multiplataforma (Android/iOS) con backend REST en Laravel 12, autenticación JWT y módulos de rutinas, progreso y planes de dieta.</p>
       <div class="portfolio-tags">
         <span>React Native</span>
         <span>Laravel</span>
@@ -160,7 +160,6 @@
           <p style="opacity:.85;">
             App de fitness multiplataforma para Android e iOS con backend REST construido en Laravel 12 y autenticación JWT.
             Incluye módulos de rutinas, seguimiento de progreso, planes de dieta y perfil físico.
-            Dashboard web administrativo en React + Vite para gestión de usuarios y nutricionistas.
           </p>
 
           <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Tecnologías</h6>
@@ -169,7 +168,6 @@
             <li>Laravel 12 — API REST</li>
             <li>JWT (autenticación)</li>
             <li>MySQL</li>
-            <li>React + Vite (dashboard web)</li>
           </ul>
 
           <div class="modal-actions">
@@ -190,6 +188,99 @@
   </div>
 </div>
 <!-- FIN Modal LiftyHub -->
+
+
+
+<!------------------------------------- LiftyHub Dashboard ---------------------------------------------->
+
+<!-- LIFTYHUB DASHBOARD - CARD -->
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+  <div class="portfolio-card">
+
+    <div class="portfolio-img">
+      <div class="ratio ratio-4x3">
+        <video class="w-100 h-100"
+               muted
+               playsinline
+               onmouseenter="this.play()"
+               onmouseleave="this.pause(); this.currentTime = 0;"
+               style="object-fit: cover;">
+          <source src="assets/img/portfolio/desarrolloweb/dashboard%20lifty.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="portfolio-overlay">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalLiftyDashboard">
+          <i class="bi bi-play-btn"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="portfolio-info">
+      <h4>LiftyHub — Dashboard Web</h4>
+      <p>Panel administrativo web para gestión de usuarios y nutricionistas, construido en React + Vite como complemento al backend de LiftyHub.</p>
+      <div class="portfolio-tags">
+        <span>React</span>
+        <span>Vite</span>
+        <span>Laravel</span>
+        <span>MySQL</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- FIN Tarjeta LiftyHub Dashboard -->
+
+<!-- MODAL LIFTYHUB DASHBOARD -->
+<div class="modal fade" id="modalLiftyDashboard" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
+      <div class="row g-0">
+
+        <!-- IZQUIERDA: Video -->
+        <div class="col-lg-6 modal-split-media">
+          <button type="button" class="btn-close shadow-none modal-split-close" data-bs-dismiss="modal"></button>
+          <video class="w-100 h-100" controls>
+            <source src="assets/img/portfolio/desarrolloweb/dashboard%20lifty.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- DERECHA: Info -->
+        <div class="col-lg-6 modal-split-info">
+          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">LiftyHub — Dashboard Web</h3>
+          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Desarrollo Web · React + Vite</p>
+
+          <p style="opacity:.85;">
+            Panel administrativo web desarrollado en React + Vite como complemento al ecosistema LiftyHub.
+            Permite la gestión de usuarios, nutricionistas y seguimiento de datos del backend REST en Laravel 12.
+          </p>
+
+          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Tecnologías</h6>
+          <ul style="opacity:.85;">
+            <li>React + Vite</li>
+            <li>Laravel 12 — API REST</li>
+            <li>JWT (autenticación)</li>
+            <li>MySQL</li>
+          </ul>
+
+          <div class="modal-actions">
+            <a href="https://github.com/DavidHinojosVega" target="_blank"
+               class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
+               style="background-color: var(--accent-color); border-color: var(--accent-color); color: var(--contrast-color);">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
+                    style="border-color: var(--accent-color); color: var(--accent-color);">
+              Cerrar
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN Modal LiftyHub Dashboard -->
 
 
 
