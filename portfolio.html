@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Proyectos | David Vega</title>
-  <meta name="description" content="Proyectos de desarrollo web, IoT con Arduino, gestión de eventos y trabajos eléctricos realizados por Angel David Hinojos Vega.">
-  <meta name="keywords" content="proyectos, desarrollo web, Arduino, IoT, Laravel, JavaScript, torneos Smash Bros">
+  <meta name="description" content="Proyectos de soporte de TI, desarrollo web, IoT con Arduino y trabajos eléctricos realizados por Angel David Hinojos Vega.">
+  <meta name="keywords" content="proyectos, desarrollo web, Arduino, IoT, Laravel, JavaScript, soporte de TI, inventario de TI">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://davidhinojosvega.github.io/portafolio/portfolio.html">
   <meta property="og:title" content="Proyectos | David Vega">
-  <meta property="og:description" content="Proyectos de desarrollo web, IoT con Arduino, gestión de eventos y trabajos eléctricos realizados por Angel David Hinojos Vega.">
+  <meta property="og:description" content="Proyectos de soporte de TI, desarrollo web, IoT con Arduino y trabajos eléctricos realizados por Angel David Hinojos Vega.">
   <meta property="og:image" content="https://davidhinojosvega.github.io/portafolio/assets/img/profile/profile-square-11.webp">
 
   <!-- Favicons -->
@@ -60,7 +60,7 @@
       </nav>
 
       <div class="header-social-links">
-        <a target="_blank" href="https://wa.me/526361112541"><i class="bi bi-whatsapp"></i></a>
+        <a target="_blank" href="https://wa.me/526147001312"><i class="bi bi-whatsapp"></i></a>
         <a target="_blank" href="https://www.linkedin.com/in/david-vega-085603381/"><i class="bi bi-linkedin"></i></a>
         <a target="_blank" href="https://www.credly.com/users/angel-david-hinojos-vega"><i class="bi bi-patch-check"></i></a>
         <a target="_blank" href="https://github.com/DavidHinojosVega"><i class="bi bi-github"></i></a>
@@ -85,10 +85,10 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
             <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-soporte">Soporte TI</li>
             <li data-filter=".filter-movil">Desarrollo Móvil</li>
             <li data-filter=".filter-web">Desarrollo Web</li>
             <li data-filter=".filter-arduino">Arduino</li>
-            <li data-filter=".filter-eventos">Eventos</li>
             <li data-filter=".filter-electricidad">Electricidad</li>
             <li data-filter=".filter-diseño">Diseño</li>
           </ul><!-- End Portfolio Filters -->
@@ -97,6 +97,97 @@
             
 
             
+
+<!------------------------------------- Sistema de Inventario TI ---------------------------------------------->
+
+<!-- INVENTARIO TI - CARD -->
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soporte filter-web">
+  <div class="portfolio-card">
+
+    <div class="portfolio-img">
+      <div class="ratio ratio-4x3">
+        <div class="d-flex align-items-center justify-content-center"
+             style="background: linear-gradient(135deg, #1f6feb, #0b2545); color:#fff;">
+          <i class="bi bi-hdd-network" style="font-size:5rem;"></i>
+        </div>
+      </div>
+
+      <div class="portfolio-overlay">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalInventarioTI">
+          <i class="bi bi-info-circle"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="portfolio-info">
+      <h4>Sistema de Inventario de TI</h4>
+      <p>Aplicación web interna para el control de ~900 equipos de cómputo, telefonía y red del departamento de TI en Safran Cabin Chihuahua.</p>
+      <div class="portfolio-tags">
+        <span>ASP.NET Core</span>
+        <span>SQL Server</span>
+        <span>API REST</span>
+        <span>JavaScript</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- FIN Tarjeta Inventario TI -->
+
+<!-- MODAL INVENTARIO TI -->
+<div class="modal fade" id="modalInventarioTI" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
+      <div class="row g-0">
+
+        <!-- IZQUIERDA: Icono -->
+        <div class="col-lg-6 modal-split-media d-flex align-items-center justify-content-center"
+             style="background: linear-gradient(135deg, #1f6feb, #0b2545); color:#fff; min-height:280px;">
+          <button type="button" class="btn-close btn-close-white shadow-none modal-split-close" data-bs-dismiss="modal"></button>
+          <i class="bi bi-hdd-network" style="font-size:8rem;"></i>
+        </div>
+
+        <!-- DERECHA: Info -->
+        <div class="col-lg-6 modal-split-info">
+          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">Sistema de Inventario de TI</h3>
+          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Soporte TI · Desarrollo Web · Safran Cabin Chihuahua</p>
+
+          <p style="opacity:.85;">
+            Sistema web interno que desarrollé para el departamento de TI. Centraliza el inventario de computadoras, laptops,
+            monitores, tablets, celulares, telefonía, impresoras y equipos de red, y sustituye el control que antes se llevaba
+            en hojas de cálculo separadas. Hoy lo usan TI y Recursos Humanos.
+          </p>
+
+          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Funciones</h6>
+          <ul style="opacity:.85;">
+            <li>Inventario por tipo de equipo, con responsable, ubicación y estado</li>
+            <li>Historial de asignaciones y cartas responsivas con firma digital</li>
+            <li>Resguardo de claves BitLocker y verificación mensual de parches</li>
+            <li>Control de garantías, etiquetas QR, importación desde Excel y reportes</li>
+            <li>Maqueta 3D de los cuartos MDF y gabinetes IDF</li>
+            <li>Roles de acceso e interfaz en español e inglés</li>
+          </ul>
+
+          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Tecnologías</h6>
+          <ul style="opacity:.85;">
+            <li>ASP.NET Core — API REST</li>
+            <li>SQL Server</li>
+            <li>HTML, CSS y JavaScript</li>
+          </ul>
+
+          <div class="modal-actions">
+            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
+                    style="border-color: var(--accent-color); color: var(--accent-color);">
+              Cerrar
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN Modal Inventario TI -->
 
 <!------------------------------------- LiftyHub ---------------------------------------------->
 
@@ -284,105 +375,7 @@
 
 
 
-<!------------------------------------- Bracket Master ---------------------------------------------->
 
-<!-- BRACKET MASTER - CARD -->
-<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-  <div class="portfolio-card">
-
-    <div class="portfolio-img">
-      <div class="ratio ratio-4x3">
-        <video class="w-100 h-100"
-               muted
-               playsinline
-               onmouseenter="this.play()"
-               onmouseleave="this.pause(); this.currentTime = 0;"
-               style="object-fit: cover;">
-          <source src="assets/img/portfolio/desarrolloweb/bracket_master.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <!-- MISMO BOTÓN flotante, pero ahora abre el modal -->
-      <div class="portfolio-overlay">
-        <a href="#"
-           data-bs-toggle="modal"
-           data-bs-target="#modalBracketMaster">
-          <i class="bi bi-play-btn"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="portfolio-info">
-      <h4>Bracket Master</h4>
-      <p>Aplicación web diseñada para generar brackets de torneos, administrar participantes y visualizar enfrentamientos de forma clara e intuitiva.</p>
-      <div class="portfolio-tags">
-        <span>JavaScript</span>
-        <span>PHP</span>
-        <span>CSS</span>
-        <span>HTML</span>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!------------------------------------- fin Bracket Master ---------------------------------------------->
-
-<!-- MODAL ESTILO FOLIOONE -->
-<!-- MODAL BRACKET MASTER -->
-<div class="modal fade" id="modalBracketMaster" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
-      <div class="row g-0">
-
-        <!-- IZQUIERDA: Video -->
-        <div class="col-lg-6 modal-split-media">
-          <button type="button" class="btn-close shadow-none modal-split-close" data-bs-dismiss="modal"></button>
-          <video class="w-100 h-100" controls>
-            <source src="assets/img/portfolio/desarrolloweb/bracket_master.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- DERECHA: Info -->
-        <div class="col-lg-6 modal-split-info">
-          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">Bracket Master</h3>
-          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Desarrollo Web</p>
-
-          <p style="opacity:.85;">
-            Plataforma web creada para la comunidad de Neo Smash. Incluye generación de brackets,
-            información de eventos y recursos para la gestión de torneos. El objetivo es convertirla
-            en una suite completa con registro de jugadores, llaves automáticas y estadísticas.
-          </p>
-
-          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Tecnologías</h6>
-          <ul style="opacity:.85;">
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>HTML + Bootstrap</li>
-            <li>Responsive Design</li>
-          </ul>
-
-          <div class="modal-actions">
-            <a href="https://github.com/DavidHinojosVega" target="_blank"
-               class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
-               style="background-color: var(--accent-color); border-color: var(--accent-color); color: var(--contrast-color);">
-              <i class="bi bi-github"></i> GitHub
-            </a>
-            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
-                    style="border-color: var(--accent-color); color: var(--accent-color);">
-              Cerrar
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-  
-
-<!-- ************************************************************ -->
 <!-- ********************  CONTASMART (INICIO)  ***************** -->
 <!-- ************************************************************ -->
 <!-- Tarjeta de Portafolio - ContaSmart -->
@@ -479,242 +472,6 @@
 <!-- ************************************************************ -->
 <!-- *********************  CONTASMART (FIN)  ******************* -->
 <!-- ************************************************************ -->
-
-
-
-
-<!-- ************************************************************ -->
-<!-- *********************  NEO SMASH X EVENTO (INICIO)  ******************* -->
-<!-- ************************************************************ -->
-<!-- ======================= TARJETA EVENTO NEO SMASH X ======================= -->
-<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-eventos">
-  <div class="portfolio-card">
-
-    <div class="portfolio-img">
-      <div class="ratio ratio-4x3">
-        <img
-          src="assets/img/portfolio/neosmashX/493085022_627789930312595_4053688517343528522_n.jpg"
-          class="img-fluid object-fit-cover" alt="">
-      </div>
-
-      <div class="portfolio-overlay">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#modalNeoX">
-          <i class="bi bi-calendar-event"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="portfolio-info">
-      <h4>Neo Smash X</h4>
-      <p>Torneo competitivo con administración completa del evento, brackets, logística y experiencia para jugadores.</p>
-      <div class="portfolio-tags">
-        <span>Evento</span>
-        <span>Competitivo</span>
-        <span>Smash Bros</span>
-      </div>
-    </div>
-
-  </div>
-</div>
-<!-- ======================= FIN TARJETA EVENTO ======================= -->
-
-<!-- MODAL NEO SMASH X -->
-<div class="modal fade" id="modalNeoX" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
-      <div class="row g-0">
-
-        <!-- IZQUIERDA: Carrusel -->
-        <div class="col-lg-6 modal-split-media">
-          <button type="button" class="btn-close shadow-none modal-split-close" data-bs-dismiss="modal"></button>
-          <div id="carouselNeoX" class="carousel slide carousel-fade h-100">
-            <div class="carousel-inner h-100">
-              <div class="carousel-item active h-100">
-                <img src="assets/img/portfolio/neosmashX/493085022_627789930312595_4053688517343528522_n.jpg">
-              </div>
-              <div class="carousel-item h-100">
-                <img src="assets/img/portfolio/neosmashX/493803042_627789183646003_759982310692669996_n.jpg">
-              </div>
-              <div class="carousel-item h-100">
-                <img src="assets/img/portfolio/neosmashX/496333800_627789613645960_7473651325641202392_n.jpg">
-              </div>
-              <div class="carousel-item h-100">
-                <img src="assets/img/portfolio/neosmashX/496933973_627789986979256_7633983207491082880_n.jpg">
-              </div>
-              <div class="carousel-item h-100">
-                <img src="assets/img/portfolio/neosmashX/502955146_627789773645944_7472072083775593909_n.jpg">
-              </div>
-              <div class="carousel-item h-100">
-                <img src="assets/img/portfolio/neosmashX/504031431_627171243707797_608117142707249454_n.jpg">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNeoX" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselNeoX" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <!-- DERECHA: Info -->
-        <div class="col-lg-6 modal-split-info">
-          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">Neo Smash X</h3>
-          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Evento Competitivo · Smash Bros</p>
-
-          <p style="opacity:.85;">
-            Torneo especial que reunió a jugadores de múltiples regiones, ofreciendo una experiencia
-            competitiva completa: administración del evento, control de brackets, logística,
-            staff dedicado y un ambiente de alto nivel para la comunidad de NCG.
-          </p>
-
-          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Detalles</h6>
-          <ul style="opacity:.85;">
-            <li>Evento competitivo multi-regional</li>
-            <li>Logística y administración profesional</li>
-            <li>Control de brackets y tiempos</li>
-            <li>Jugadores destacados de la región</li>
-          </ul>
-
-          <div class="modal-actions">
-            <a href="https://www.facebook.com/profile.php?id=100092447806558" target="_blank"
-               class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
-               style="background-color: var(--accent-color); border-color: var(--accent-color); color: var(--contrast-color);">
-              <i class="bi bi-facebook"></i> Ver en Facebook
-            </a>
-            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
-                    style="border-color: var(--accent-color); color: var(--accent-color);">
-              Cerrar
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
- <!-- ************************************************************ -->
-<!-- *********************  NEO SMASH X EVENTO (FIN)  ******************* -->
-<!-- ************************************************************ -->
-
-
-
-<!-- **************************************************************************************** -->
-<!-- *******************************   NEO SMASH V7 — TARJETA   ****************************** -->
-<!-- **************************************************************************************** -->
-<!-- ======================= TARJETA EVENTO NEO SMASH V7 ======================= -->
-<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-eventos">
-  <div class="portfolio-card">
-
-    <div class="portfolio-img">
-      <div class="ratio ratio-4x3">
-        <img
-          src="assets/img/portfolio/neosmashV7/476798707_542282102196712_4062316157234375951_n.jpg"
-          class="img-fluid object-fit-cover"
-          alt="">
-      </div>
-
-      <div class="portfolio-overlay">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#modalNeoV7">
-          <i class="bi bi-calendar-event"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="portfolio-info">
-      <h4>Neo Smash V7</h4>
-      <p>Torneo regional enfocado en competitividad, gestión de participantes y operación completa del evento.</p>
-      <div class="portfolio-tags">
-        <span>Evento</span>
-        <span>Competitivo</span>
-        <span>Región NCG</span>
-      </div>
-    </div>
-
-  </div>
-</div>
-<!-- ======================= FIN TARJETA EVENTO NEO SMASH V7 ======================= -->
-
-
-<!-- *******************************   INICIO MODAL NEO SMASH V7   ******************************* -->
-
-<!-- MODAL NEO SMASH V7 -->
-<div class="modal fade" id="modalNeoV7" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: var(--surface-color); color: var(--default-color);">
-      <div class="row g-0">
-
-        <!-- IZQUIERDA: Carrusel -->
-        <div class="col-lg-6 modal-split-media">
-          <button type="button" class="btn-close shadow-none modal-split-close" data-bs-dismiss="modal"></button>
-          <div id="carouselNeoV7Full" class="carousel slide carousel-fade h-100">
-            <div class="carousel-inner h-100">
-              <div class="carousel-item active h-100">
-                <img src="assets/img/portfolio/neosmashV7/476798707_542282102196712_4062316157234375951_n.jpg">
-              </div>
-              <div class="carousel-item h-100">
-                <img src="assets/img/portfolio/neosmashV7/476800794_542282022196720_3082869242479192797_n.jpg">
-              </div>
-              <div class="carousel-item h-100">
-                <img src="assets/img/portfolio/neosmashV7/477717563_542282028863386_1160761766155885727_n.jpg">
-              </div>
-              <div class="carousel-item h-100">
-                <img src="assets/img/portfolio/neosmashV7/477727102_542282052196717_4643335821281647707_n.jpg">
-              </div>
-              <div class="carousel-item h-100">
-                <img src="assets/img/portfolio/neosmashV7/479674364_542281885530067_7629345711541944160_n.jpg">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNeoV7Full" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselNeoV7Full" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <!-- DERECHA: Info -->
-        <div class="col-lg-6 modal-split-info">
-          <h3 class="fw-bold mb-1" style="font-family: 'Raleway', sans-serif; color: var(--heading-color);">Neo Smash V7</h3>
-          <p class="mb-3" style="opacity:.6; font-size:.85rem;">Evento Regional · Smash Bros</p>
-
-          <p style="opacity:.85;">
-            Torneo regional que reunió a jugadores de distintos municipios en un ambiente competitivo
-            y profesional. Integró mesas dedicadas, setups optimizados y un flujo de partidas
-            diseñado para mantener tiempos eficientes.
-          </p>
-
-          <h6 class="fw-bold mt-3 mb-2" style="color: var(--heading-color);">Detalles</h6>
-          <ul style="opacity:.85;">
-            <li>Evento competitivo regional</li>
-            <li>Organización y administración profesional</li>
-            <li>Setups y espacios asignados</li>
-            <li>Experiencia fluida para competidores</li>
-          </ul>
-
-          <div class="modal-actions">
-            <a href="https://www.facebook.com/profile.php?id=100092447806558" target="_blank"
-               class="btn btn-primary rounded-pill px-4 d-flex align-items-center gap-2"
-               style="background-color: var(--accent-color); border-color: var(--accent-color); color: var(--contrast-color);">
-              <i class="bi bi-facebook"></i> Ver en Facebook
-            </a>
-            <button class="btn btn-outline rounded-pill px-4" data-bs-dismiss="modal"
-                    style="border-color: var(--accent-color); color: var(--accent-color);">
-              Cerrar
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-<!-- **************************************************************************************** -->
-<!-- *******************************   FIN TARJETA NEO SMASH V7   **************************** -->
-<!-- **************************************************************************************** -->
-
-
 
 
 
@@ -998,13 +755,13 @@
 
     <div class="container">
       <div class="copyright text-center">
-        <p>© 2025 Angel David Hinojos Vega</p>
+        <p>© 2026 Angel David Hinojos Vega</p>
       </div>
       <div class="social-links d-flex justify-content-center">
         <a href="https://github.com/DavidHinojosVega" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
         <a href="https://www.linkedin.com/in/david-vega-085603381/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
         <a href="https://www.credly.com/users/angel-david-hinojos-vega" target="_blank" rel="noopener noreferrer"><i class="bi bi-patch-check"></i></a>
-        <a href="https://wa.me/526361112541" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://wa.me/526147001312" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
       </div>
 
     </div>
